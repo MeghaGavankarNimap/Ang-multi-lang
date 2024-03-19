@@ -1,0 +1,13 @@
+
+
+
+<select id="select_dropdown" class="form-cotrol form_control language_form_control"
+(change)="changeLanguage($event)"[(ngModel)]="langValue">
+<option *ngFor="let language of availableLanguages" [value]="language.code">{{language.name}}
+</option>
+
+</select>
+
+
+
+<h5>{{'aboutUs'|translate }}</h5>
